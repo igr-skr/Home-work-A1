@@ -1,0 +1,47 @@
+<script>
+
+	var year_income = +prompt('Please enter your income for the last year');
+
+	if (year_income <= 9525)
+	{
+		var year_tax = year_income * 0.1;
+		console.log("You should pay: " + year_tax);
+	}
+
+	else if (year_income <= 38700)
+	{
+		var year_tax = (year_income - 9525) * 0.12 + 952.5;
+		console.log("You should pay: " + year_tax);
+	}
+
+	else if (year_income <= 82500)
+	{
+		var year_tax = (year_income - 38700) * 0.22 + 4453.5;
+		console.log("You should pay: " + year_tax);
+	}
+
+	else if (year_income <= 157500)
+	{
+		var year_tax = (year_income - 38700) * 0.24 + 14089.5;
+		console.log("You should pay: " + year_tax);
+	}
+
+	else if (year_income <= 200000)
+	{
+		var year_tax = (year_income - 157500) * 0.32 + 32089.5;
+		console.log("You should pay: " + year_tax);
+	}
+
+	else if (year_income <= 500000)
+	{
+		var year_tax = (year_income - 200000) * 0.35 + 45689.5;
+		console.log("You should pay: " + year_tax);
+	}
+
+	else if (year_income > 500000)
+	{
+		var year_tax = (year_income - 500000) * 0.37 + 150689.5;
+		console.log("You should pay: " + year_tax);
+	}
+
+</script>
